@@ -9,4 +9,9 @@ public class NavigateTo {
         return Task.where("{0} opens the Wikipedia home page",
                 Open.browserOn().the(WikipediaHomePage.class));
     }
+    
+    public static Performable theSnarioxHomePage() {
+        return Task.where("{0} abre la Home de Snariox Inc.",
+                Open.browserOn().the(SnarioxHomePage.class));
+    }
 }
