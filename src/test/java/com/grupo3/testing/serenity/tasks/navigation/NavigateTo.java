@@ -5,9 +5,10 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
 
 public class NavigateTo {
-    public static Performable theWikipediaHomePage() {
-        return Task.where("{0} opens the Wikipedia home page",
-                Open.browserOn().the(WikipediaHomePage.class));
+    
+    public static Performable theSnarioxHomePage() {
+        return Task.where("{0} opens the Snariox home page",
+                Open.browserOn().the(SnarioxHomePage.class));
     }
     
     public static Performable theSnarioxHomePage() {
