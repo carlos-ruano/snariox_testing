@@ -11,8 +11,8 @@ public class NavigateTo {
                 Open.browserOn().the(SnarioxHomePage.class));
     }
     
-    public static Performable theSnarioxHomePage() {
+    public static Performable theSnarioxContactPage() {
         return Task.where("{0} abre la Home de Snariox Inc.",
-                Open.browserOn().the(SnarioxHomePage.class));
+                Open.browserOn().the(PaginaContacto.class));
     }
 }
