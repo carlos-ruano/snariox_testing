@@ -9,4 +9,27 @@ public class SnarioxProductosArticle {
 	public static final Target H2_SERVICIOS =  
     		Target.the("article identifier").
     		locatedBy("//*[@id=\"que-ofrecemos\"]");
+	public static final Target NUM_TARJETAS_PRODUCTOS =  
+    		Target.the("numero productos").
+    		locatedBy("/html/body/div[1]/div[2]/div/div[1]");
+	public static final Target TARJETA_1 =  
+    		Target.the("tarjeta productos").
+    		locatedBy("/html/body/div[1]/div[2]/div/div[1]/div/div[2]");
+	public static final Target TARJETA_2 =  
+    		Target.the("tarjeta productos").
+    		locatedBy("/html/body/div[1]/div[2]/div/div[2]/div/div[2]");
+	public static final Target TARJETA_3 =  
+    		Target.the("tarjeta productos").
+    		locatedBy("/html/body/div[1]/div[2]/div/div[3]/div/div[2]");
+	public static final Target TARJETA_4 =  
+    		Target.the("tarjeta productos").
+    		locatedBy("/html/body/div[1]/div[2]/div/div[4]/div/div[2]");
+	public static final Target TARJETA_5 =  
+    		Target.the("tarjeta productos").
+    		locatedBy("/html/body/div[1]/div[2]/div/div[5]/div/div[2]");
+	public static final Target TARJETA_6 =  
+    		Target.the("tarjeta productos").
+    		locatedBy("/html/body/div[1]/div[2]/div/div[6]/div/div[2]");
+	
+	
 }
