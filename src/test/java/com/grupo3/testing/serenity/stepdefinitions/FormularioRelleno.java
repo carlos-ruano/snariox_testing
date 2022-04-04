@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.grupo3.testing.serenity.tasks.navigation.NavegarA;
+import com.grupo3.testing.serenity.tasks.navigation.NavigateTo;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -22,7 +23,7 @@ public class FormularioRelleno {
 	
 	@Given("{actor} entra a la pagina de Contacto")
 	public void la_pagina_de_contacto(Actor actor) {
-		actor.wasAbleTo(NavegarA.paginaContacto());
+		actor.wasAbleTo(NavigateTo.theSnarioxContactPage());
 		System.setProperty(driverBrowser, driverLoc);
 		driver = new ChromeDriver();
 		driver.get(url);
