@@ -10,3 +10,13 @@ Feature: Se nos ha pedido desarrollar una pagina web para una empresa de metalur
 		Given Usuario que entra en la pagina web TC44
 		When Se carga la pagina a Usuario TC44
 		Then La pagina muestra a Usuario informacion acerca de la empresa TC44
+		
+	#Mediante el siguiente test se comprobara la existencia de dichas etiquetas y su coherencia para contener la informacion requerida.
+	@TEST_PTRES-50 @REQ_PTRES-7 @REQ_PTRES-7 @TESTSET_PTRES-40
+	Scenario: HU7 | TS40 | TC50 - La informacion sobre la empresa se encuentra dentro de un <div> y un <h1>
+		Given Usuario que entra en la pagina web TC50
+		When Se carga la pagina a Usuario TC50
+		Then El <div> con id="snariox-text" no esta vacio TC50
+		And Muestra informacion sobre la empresa a Usuario TC50
+		And El <h1> asociado contiene el texto: "¿Que es Snariox?" TC50
+		And No tiene ningun lorem ipsum TC50
