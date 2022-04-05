@@ -296,7 +296,7 @@ public class HomeDefinitions {
 
 	@Then("{actor} ve marcado el anno {int} TC89")
 	public void usuario_ve_marcado_el_anno_tc89(Actor actor, Integer int1) {
-		String term = int1.toString() + " © Copyrights. All rights reserved. Snariox";
+		String term = "© "+int1.toString()+" Copyrights. All rights reserved. Snariox";
 		actor.attemptsTo(
 				Ensure.that(SnarioxInformacion.FOOTER_COPYRIGHT)
 				.hasText(term)
