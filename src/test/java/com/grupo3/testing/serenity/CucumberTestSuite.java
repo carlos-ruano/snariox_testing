@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty","json:target/serenity-reports/cucumber_report.json"},
         features = "src/test/resources/features",
-        tags = "not @prueba"
+        tags = "@REQ_PTRES-7"
         //Si solo quisieramos usar un escenario concreto, podemos usar
-        //features = "src/test/resources/features/search/search_by_keyword.feature"
+        //features = "src/test/resources/features/InformacionHome/obtenerInformacionHome.feature"
 )
 public class CucumberTestSuite {}
