@@ -1,8 +1,5 @@
 package com.grupo3.testing.serenity.stepdefinitions;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.FindAll;
 
 import com.grupo3.testing.serenity.tasks.navigation.NavigateTo;
 import com.grupo3.testing.serenity.tasks.search.SnarioxProductosArticle;
@@ -10,7 +7,6 @@ import com.grupo3.testing.serenity.tasks.search.SnarioxProductosArticle;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Scroll;

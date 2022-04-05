@@ -8,7 +8,7 @@ public class SnarioxProductosArticle {
     		locatedBy("//*[@id=\"que-ofrecemos\"]");
 	public static final Target H2_SERVICIOS =  
     		Target.the("article identifier").
-    		locatedBy("//*[@id=\"que-ofrecemos\"]");
+    		locatedBy("//*[@id=\"servicios\"]/h2");
 	public static final Target NUM_TARJETAS_PRODUCTOS =  
     		Target.the("numero productos").
     		locatedBy("/html/body/div[1]/div[2]/div/div[1]");
@@ -30,6 +30,22 @@ public class SnarioxProductosArticle {
 	public static final Target TARJETA_6 =  
     		Target.the("tarjeta productos").
     		locatedBy("/html/body/div[1]/div[2]/div/div[6]/div/div[2]");
-	
-	
+	public static final Target SERVICIO_1 =  
+    		Target.the("parrafo servicio").
+    		locatedBy("//*[@id=\"servicio1\"]/div[1]/p");
+	public static final Target SERVICIO_2 =  
+    		Target.the("parrafo servicio").
+    		locatedBy("//*[@id=\"servicio2\"]/div[1]/p");
+	public static final Target SERVICIO_3 =  
+    		Target.the("parrafo servicio").
+    		locatedBy("//*[@id=\"servicio3\"]/div[1]/p");
+	public static final Target HEADER_SERVICIO_1 =  
+    		Target.the("header servicio").
+    		locatedBy("//*[@id=\"servicio1\"]/div[1]/h3");
+	public static final Target HEADER_SERVICIO_2 =  
+    		Target.the("header servicio").
+    		locatedBy("//*[@id=\"servicio2\"]/div[1]/h3");
+	public static final Target HEADER_SERVICIO_3 =  
+    		Target.the("header servicio").
+    		locatedBy("//*[@id=\"servicio3\"]/div[1]/h3");
 }
