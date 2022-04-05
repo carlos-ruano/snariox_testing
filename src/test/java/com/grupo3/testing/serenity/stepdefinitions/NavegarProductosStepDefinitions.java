@@ -14,7 +14,7 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 
 public class NavegarProductosStepDefinitions {
 	
-	//Escenario encontrar la seccion servicios dentro de la página home
+	//Escenario encontrar la seccion productos dentro de la página home
 	@Given("{actor} entra en la pagina home de la web TC18")
 	public void la_pagina_home_de_la_web_tc18(Actor actor) {
 		actor.wasAbleTo(

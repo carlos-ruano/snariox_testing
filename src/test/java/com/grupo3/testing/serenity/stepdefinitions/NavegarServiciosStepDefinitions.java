@@ -97,8 +97,10 @@ public class NavegarServiciosStepDefinitions {
 	}
 	@Then("{actor} que los elementos contienen un h3 con los titulo Aleaciones especiales, Aceros inoxidables y Oportunidades en todo el mundo respectivamente TC96")
 	public void usuario_que_los_elementos_contienen_un_h3_con_los_titulo_aleaciones_especiales_aceros_inoxidables_y_oportunidades_en_todo_el_mundo_respectivamente_tc96(Actor actor) {
-		Ensure.that(SnarioxProductosArticle.HEADER_SERVICIO_1).hasText("Aleaciones especiales");
-		Ensure.that(SnarioxProductosArticle.HEADER_SERVICIO_2).hasText("Aceros inoxidables");
-		Ensure.that(SnarioxProductosArticle.HEADER_SERVICIO_3).hasText("Oportunidades en todo el mundo");
+		actor.attemptsTo(
+				Ensure.that(SnarioxProductosArticle.HEADER_SERVICIO_1).hasText("Aleaciones especiales"),
+				Ensure.that(SnarioxProductosArticle.HEADER_SERVICIO_2).hasText("Aceros inoxidables"),
+				Ensure.that(SnarioxProductosArticle.HEADER_SERVICIO_3).hasText("Oportunidades en todo el mundo")
+		);
 	}
 }

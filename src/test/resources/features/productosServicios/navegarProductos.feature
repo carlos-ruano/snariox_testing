@@ -15,7 +15,10 @@ Feature: HU2 | TS17 - Ver los servicios y productos de la empresa en la página 
 		Given usuario entra en la pagina home de la web TC19
 		When usuario hace click en botón leer más TC19
 		Then usuario va automaticamente a la seccion productos TC19
-		
+	
+	@manual
+	@manual-result:passed
+	@manual-last-tested:sprint-1	
 	@TEST_PTRES-91 @REQ_PTRES-2 @REQ_PTRES-2 @TESTSET_PTRES-17 @TC @regresion
 	Scenario: HU2 | TS17 | TC91 - Validar el número de tarjetas de productos que ofrece la empresa
 		Given usuario entra en la pagina home de la web TC91

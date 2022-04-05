@@ -9,6 +9,9 @@ Feature: HU2 | TS17 - Ver los servicios y productos de la empresa en la página 
 		When usuario hace scroll TC93
 		Then usuario encuentra un h2 con un titulo que incluye la palabra servicios TC93
 	#Usuario tiene que encontrar dentro de la seccion servicios tres partes diferenciadas
+	@manual
+	@manual-result:passed
+	@manual-last-tested:sprint-1
 	@TEST_PTRES-94 @REQ_PTRES-2 @REQ_PTRES-2 @TESTSET_PTRES-17 @TC @regresion
 	Scenario: HU2 | TS17 | TC94 - Validar el número de elementos de servicios que ofrece la empresa
 		Given usuario que entra en la pagina home de la web TC94
