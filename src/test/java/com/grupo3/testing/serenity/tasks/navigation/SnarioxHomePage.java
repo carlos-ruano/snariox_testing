@@ -4,5 +4,5 @@ import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
 
 @DefaultUrl("https://snariox.web.app/index.html")
-public class SnarioxHomePage extends PageObject {
+public class SnarioxHomePage extends PageObject {	
 }
