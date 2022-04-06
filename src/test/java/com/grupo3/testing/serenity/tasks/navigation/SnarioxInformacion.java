@@ -3,7 +3,7 @@ package com.grupo3.testing.serenity.tasks.navigation;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class SnarioxInformacion {
-	// Definimos en avriables estáticas los targets a utilizar por Serenity BDD
+	// Definimos en variables estáticas los targets a utilizar por Serenity BDD
     public static final Target TITLE_SNARIOX =  
     		Target.the("Cabecero de la web").
     		locatedBy("/html/head/title");
