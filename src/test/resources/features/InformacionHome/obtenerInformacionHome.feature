@@ -1,7 +1,7 @@
 #Author: your.email@your.domain.com
 #Keywords Summary :
 
-@REQ_PTRES-10
+@REQ_PTRES-7
 Feature: HU7 - Ver en el inicio de la página web la información general de la empresa
 
 	#La prueba se basara en cargar la web de la empresa y en su apartado home comprobar que existe informacion referente a la misma.

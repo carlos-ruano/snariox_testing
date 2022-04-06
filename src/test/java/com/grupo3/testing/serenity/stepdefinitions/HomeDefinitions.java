@@ -1,6 +1,7 @@
 package com.grupo3.testing.serenity.stepdefinitions;
 
 import com.grupo3.testing.serenity.tasks.navigation.NavigateTo;
+import com.grupo3.testing.serenity.tasks.navigation.SnarioxEmpleados;
 import com.grupo3.testing.serenity.tasks.navigation.SnarioxInformacion;
 
 import io.cucumber.java.en.Given;
@@ -180,14 +181,21 @@ public class HomeDefinitions {
 
 	@Then("Cada icono tiene un hipervínculo activo para que {actor} haga clic TC53")
 	public void cada_icono_tiene_un_hipervínculo_activo_para_que_usuario_haga_clic_tc53(Actor actor) {
-		SnarioxInformacion.FOOTER_INSTAGRAM.resolveFor(actor).getAttribute("href")
+		boolean verif1 = SnarioxInformacion.FOOTER_INSTAGRAM.resolveFor(actor).getAttribute("href")
 				.equalsIgnoreCase("https://www.instagram.com/");
-		SnarioxInformacion.FOOTER_FACEBOOK.resolveFor(actor).getAttribute("href")
+		boolean verif2 = SnarioxInformacion.FOOTER_FACEBOOK.resolveFor(actor).getAttribute("href")
 				.equalsIgnoreCase("https://www.facebook.com/");
-		SnarioxInformacion.FOOTER_LINKEDIN.resolveFor(actor).getAttribute("href")
+		boolean verif3 = SnarioxInformacion.FOOTER_LINKEDIN.resolveFor(actor).getAttribute("href")
 				.equalsIgnoreCase("https://www.linkedin.com/");
-		SnarioxInformacion.FOOTER_TWITTER.resolveFor(actor).getAttribute("href")
+		boolean verif4 = SnarioxInformacion.FOOTER_TWITTER.resolveFor(actor).getAttribute("href")
 				.equalsIgnoreCase("https://www.twitter.com/");
+		
+		actor.attemptsTo(
+				Ensure.that(verif1).isTrue(),
+				Ensure.that(verif2).isTrue(),
+				Ensure.that(verif3).isTrue(),
+				Ensure.that(verif4).isTrue()
+				);
 	}
 
 	// HU7 | TS40 | TC54 - Usuario puede ver los terminos y condiciones de la web
@@ -262,12 +270,18 @@ public class HomeDefinitions {
 				Switch.toTheOtherWindow()
 				);
 		// Comprobamos los href de los 3 enlaces
-		SnarioxInformacion.LINK_HOME.resolveFor(actor).getAttribute("href")
-		.equalsIgnoreCase("index.html");
-		SnarioxInformacion.FOOTER_CONTACTO.resolveFor(actor).getAttribute("href")
-		.equalsIgnoreCase("contacto.html");
-		SnarioxInformacion.FOOTER_LUCATIC.resolveFor(actor).getAttribute("href")
-		.equalsIgnoreCase("https://www.twitter.com/");
+		boolean verif1=SnarioxInformacion.LINK_HOME.resolveFor(actor).getAttribute("href")
+		.equalsIgnoreCase("https://snariox.web.app/index.html");
+		boolean verif2=SnarioxInformacion.FOOTER_CONTACTO.resolveFor(actor).getAttribute("href")
+		.equalsIgnoreCase("https://snariox.web.app/contacto.html");
+		boolean verif3=SnarioxInformacion.FOOTER_LUCATIC.resolveFor(actor).getAttribute("href")
+		.equalsIgnoreCase("https://www.luca-tic.com/");
+
+		actor.attemptsTo(
+				Ensure.that(verif1).isTrue(),
+				Ensure.that(verif2).isTrue(),
+				Ensure.that(verif3).isTrue()
+				);
 	}
 
 	// HU7 | TS40 | TC89 - Usuario quiere ver el anno del copyright de la web
