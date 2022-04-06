@@ -10,6 +10,6 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         tags = "not @prueba"
         //Si solo quisieramos usar un escenario concreto, podemos usar
-        //features = "src/test/resources/features/search/search_by_keyword.feature"
+        //features = "src/test/resources/features/InformacionHome/obtenerInformacionHome.feature"
 )
 public class CucumberTestSuite {}
